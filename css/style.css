@@ -114,13 +114,14 @@ a.boxclose{
 /*--/header--*/
 /*--banner--*/
 .banner{
-	background: url(../images/banner.jpg) no-repeat 0px 0px;
+	background: url(../images/banner580.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	text-align: center;
 	min-height:750px;
+        background-position: center;
 }
 .banner-info{
 width:65%;
