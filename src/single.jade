@@ -1,0 +1,303 @@
+doctype html
+//
+  Author: W3layouts
+  Author URL: http://w3layouts.com
+  License: Creative Commons Attribution 3.0 Unported
+  License URL: http://creativecommons.org/licenses/by/3.0/
+html
+  head
+    title
+      | Kong a Personal Portfolio Flat Bootstrap Responsive Website Template | Single :: w3layouts
+    // fonts
+    link(href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic', rel='stylesheet', type='text/css')
+    // //fonts
+    link(href='css/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='all')
+    // for-mobile-apps
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Kong Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, \
+    Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    // //for-mobile-apps
+    // js
+    script(type='text/javascript', src='js/jquery.min.js')
+    // js
+    // start-smooth-scrolling
+    script(type='text/javascript', src='js/move-top.js')
+    script(type='text/javascript', src='js/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+    // start-smooth-scrolling
+  body
+    // banner
+    #home.banner.page-head
+      .container
+        .top-header.row
+          script(src='js/classie.js')
+          // top-nav--
+          .logo
+            a(href='index.html')
+              img(src='images/logo.png', alt='')
+          .top-nav
+            .nav-icon
+              a#activator.right_bt(href='#')
+                span  
+            #box.box
+              .box_content
+                .box_content_center
+                  .form_content
+                    .menu_box_list
+                      ul
+                        li
+                          a(href='index.html')
+                            span home
+                        li
+                          a(href='index.html')
+                            span about
+                        li
+                          a(href='index.html')
+                            span services
+                        li
+                          a(href='index.html')
+                            span portfolio
+                        li
+                          a(href='index.html')
+                            span Testimonial
+                        li
+                          a(href='index.html')
+                            span blog
+                        li
+                          a(href='index.html')
+                            span Contact
+                        .clearfix  
+                    a#boxclose.boxclose
+                      span  
+          // -start-click-drop-down-menu---
+          // --start-dropdown-
+          script(type='text/javascript').
+            var $ = jQuery.noConflict();
+            $(function() {
+            $('#activator').click(function(){
+            $('#box').animate({'top':'0px'},900);
+            });
+            $('#boxclose').click(function(){
+            $('#box').animate({'top':'-1000px'},900);
+            });
+            });
+            $(document).ready(function(){
+            //Hide (Collapse) the toggle containers on load
+            $(".toggle_container").hide();
+            //Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+            $(".trigger").click(function(){
+            $(this).toggleClass("active").next().slideToggle("slow");
+            return false; //Prevent the browser jump to the link anchor
+            });
+            });
+          // -//End-click-drop-down-menu---
+          .clearfix  
+    // /header-banner
+    // single-page
+    .sample-page
+      .container
+        .sam-head.text-center
+          h3 OUR BLOG
+          .strip.text-center
+            img(src='images/blog.png', alt=' ')
+        .col-md-8.sample-page-left
+          .sample-page-info
+            img(src='images/123.jpg', alt='')
+            h5
+              | CONDIMENTUM FRINGILLA, FRINGILLA CONDIMENTUM,FINIBUS BONORUM MALORUM, DONEC UT QUAM LIGULA, SED NISI LOBORTIS.
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              | Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
+              | consectetur adipisicing elit.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              | in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+              | you need to be sure there isn't anything embarrassing hidden in the middle of text.
+            h5 TINCIDUNT NEC, PRETIUM MALESUADA, AUCTOR LIBERO RUTRUM,
+            p
+              | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              | in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
+              | you need to be sure there isn't anything embarrassing hidden in the middle of text.
+            .comment-icons
+              ul
+                li
+                  span.d
+                  a(href='#') Lorem ipsum dolor sit consectetur
+                li
+                  span.clndr
+                  | MARCH 5, 2015
+                li
+                  span.admin
+                  a(href='#') Admin
+                li
+                  span.cmnts
+                  a(href='#') 5 comments
+                li
+                  span.like
+                  |  15
+            .admin-text
+              h5 Written By Admin
+              .admin-text-left
+                a(href='#')
+                  img(src='images/icon3.png', alt='')
+              .admin-text-right
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+                  | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                span
+                  | View all posts by:
+                  a(href='#')  Admin 
+              .clearfix  
+            .response
+              h4 RESPONSES
+              .response-info
+                .response-text-left
+                  a(href='#')
+                    img(src='images/icon3.png', alt='')
+                  h5
+                    a(href='#') Admin
+                .response-text-right
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+                    | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  ul
+                    li MARCH 1, 2015
+                    li
+                      a(href='#') Reply
+                .clearfix  
+              .response-info
+                .response-text-left
+                  a(href='#')
+                    img(src='images/icon3.png', alt='')
+                  h5
+                    a(href='#') Admin
+                .response-text-right
+                  p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+                    | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  ul
+                    li MARCH 1, 2015
+                    li
+                      a(href='#') Reply
+                .clearfix  
+            .coment-form
+              h4 LEAVE YOUR COMMENT
+              form
+                input(type='text', value='Name :', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Name :';}", required='')
+                input(type='text', value='Website :', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Website :';}", required='')
+                textarea(type='text', onfocus="this.value = '';", onblur="if (this.value == '') {this.value = 'Your Comment...';}", required='') Your Comment...
+                input(type='submit', value='SEND')
+        .col-md-4.sample-page-right
+          .category
+            h4 CATEGORIES
+            ul
+              li
+                a(href='#') Donec ut quam ligula feugiat scelerisque.
+              li
+                a(href='#') Etiam volutpat tortor quis nibh lobortis
+              li
+                a(href='#') Fusce vitae dolor vitae blandit varius.
+              li
+                a(href='#') Proin commodo metus sed nisi lobortis.
+              li
+                a(href='#') Nunc volutpat neque vel augue interdum,
+              li
+                a(href='#') condimentum fringilla justo lobortis.
+              li
+                a(href='#') Vivamus consequat dolor ac est congue.
+          .recent-posts
+            h4 RECENT POSTS
+            .recent-posts-info
+              .posts-left
+                a(href='#')
+                  img(src='images/img21.jpg', alt='')
+              .posts-right
+                label MARCH 5, 2015
+                h5
+                  a(href='#') FRINGILLA 
+                p Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.
+                .read-more
+                  a(href='#') Read More
+              .clearfix  
+            .recent-posts-info
+              .posts-left
+                a(href='#')
+                  img(src='images/img20.jpg', alt='')
+              .posts-right
+                label MARCH 1, 2015
+                h5
+                  a(href='#') FINIBUS BONO
+                p Lorem ipsum dolor sit amet, consectetur adipisicing incididunt.
+                .read-more
+                  a(href='#') Read More
+              .clearfix  
+          .comments
+            h4 RECENT COMMENTS
+            .comments-info
+              .cmnt-icon-left
+                a(href='#')
+                  img(src='images/icon3.png', alt='')
+              .cmnt-icon-right
+                p MARCH 1, 2015
+                p
+                  a(href='#') Admin
+              .clearfix  
+              p.cmmnt
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .comments-info
+              .cmnt-icon-left
+                a(href='#')
+                  img(src='images/icon3.png', alt='')
+              .cmnt-icon-right
+                p MARCH 1, 2015
+                p
+                  a(href='#') Admin
+              .clearfix  
+              p.cmmnt
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            .comments-info
+              .cmnt-icon-left
+                a(href='#')
+                  img(src='images/icon3.png', alt='')
+              .cmnt-icon-right
+                p MARCH 1, 2015
+                p
+                  a(href='#') Admin 
+              .clearfix  
+              p.cmmnt
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .clearfix  
+    // //single-page
+    // footer
+    .footer
+      .container
+        p
+          | Copyright © 2015 Kong. Template by 
+          a(href='http://w3layouts.com/')  W3layouts
+    // //footer
+    // here stars scrolling icon
+    script(type='text/javascript').
+      $(document).ready(function() {
+      /*
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      */
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    // //here ends scrolling icon
