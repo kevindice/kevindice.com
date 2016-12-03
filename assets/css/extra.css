@@ -1,0 +1,8 @@
+#header h2{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.15em;
+}
+
+#header hr{
+    border-bottom: solid 2px rgba(255, 255, 255, 0.3);
+}
